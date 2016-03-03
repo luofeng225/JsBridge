@@ -1,5 +1,22 @@
 #JsBridge
 
+##使用
+##分析
+Js java 定义Message
+传递消息基于：
+#shouldOverrideUrlLoading
+
+
+java调用js
+通过#loadUrl 方法调用到js 
+
+
+Js调用Java
+ Java方法主动调用JS执行fetchQueue 获得返回结果
+JS_FETCH_QUEUE_FROM_JAVA = "javascript:WebViewJavascriptBridge._fetchQueue();";
+
+
+
 -----
 
 inspired and modified from [this](https://github.com/jacin1/JsBridge) and wechat jsBridge file, with some bugs fix and feature enhancement.
